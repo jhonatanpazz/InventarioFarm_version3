@@ -256,5 +256,16 @@ namespace InventarioFarm_version3
 
             hidesubMenu();
         }
+
+        private void btnMantoMarcas_Click(object sender, EventArgs e)
+        {
+
+            OpenChildForm(new MantoMarcas());
+
+            ActivateButton(sender, Color.Magenta);
+
+            hidesubMenu();
+
+        }
     }
 }

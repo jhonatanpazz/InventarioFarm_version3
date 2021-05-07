@@ -45,6 +45,7 @@
     <Compile Include="M_Empleado.cs" />
     <Compile Include="M_Factura.cs" />
     <Compile Include="M_MantoEmpleado.cs" />
+    <Compile Include="M_Marca.cs" />
     <Compile Include="M_Sucursal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

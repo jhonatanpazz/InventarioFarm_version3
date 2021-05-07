@@ -47,6 +47,7 @@
             this.panelsombra = new System.Windows.Forms.Panel();
             this.panelCentral = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnMantoMarcas = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelMantos.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -75,13 +76,14 @@
             // 
             // panelMantos
             // 
+            this.panelMantos.Controls.Add(this.btnMantoMarcas);
             this.panelMantos.Controls.Add(this.iconButton2);
             this.panelMantos.Controls.Add(this.btnEmpleado);
             this.panelMantos.Controls.Add(this.btnCliente);
             this.panelMantos.Controls.Add(this.btnMantoMedicamentos);
             this.panelMantos.Location = new System.Drawing.Point(3, 469);
             this.panelMantos.Name = "panelMantos";
-            this.panelMantos.Size = new System.Drawing.Size(263, 393);
+            this.panelMantos.Size = new System.Drawing.Size(263, 481);
             this.panelMantos.TabIndex = 10;
             // 
             // iconButton2
@@ -90,7 +92,7 @@
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Deezer;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -110,7 +112,7 @@
             this.btnEmpleado.FlatAppearance.BorderSize = 0;
             this.btnEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpleado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEmpleado.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.btnEmpleado.IconChar = FontAwesome.Sharp.IconChar.Walking;
             this.btnEmpleado.IconColor = System.Drawing.Color.White;
             this.btnEmpleado.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -130,7 +132,7 @@
             this.btnCliente.FlatAppearance.BorderSize = 0;
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCliente.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
+            this.btnCliente.IconChar = FontAwesome.Sharp.IconChar.PeopleArrows;
             this.btnCliente.IconColor = System.Drawing.Color.White;
             this.btnCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -150,7 +152,7 @@
             this.btnMantoMedicamentos.FlatAppearance.BorderSize = 0;
             this.btnMantoMedicamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMantoMedicamentos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMantoMedicamentos.IconChar = FontAwesome.Sharp.IconChar.Cogs;
+            this.btnMantoMedicamentos.IconChar = FontAwesome.Sharp.IconChar.Monero;
             this.btnMantoMedicamentos.IconColor = System.Drawing.Color.White;
             this.btnMantoMedicamentos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMantoMedicamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -333,6 +335,26 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // btnMantoMarcas
+            // 
+            this.btnMantoMarcas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMantoMarcas.FlatAppearance.BorderSize = 0;
+            this.btnMantoMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantoMarcas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMantoMarcas.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.btnMantoMarcas.IconColor = System.Drawing.Color.White;
+            this.btnMantoMarcas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMantoMarcas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMantoMarcas.Location = new System.Drawing.Point(0, 349);
+            this.btnMantoMarcas.Name = "btnMantoMarcas";
+            this.btnMantoMarcas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMantoMarcas.Size = new System.Drawing.Size(263, 82);
+            this.btnMantoMarcas.TabIndex = 10;
+            this.btnMantoMarcas.Text = "Mantenimiento Marcas";
+            this.btnMantoMarcas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMantoMarcas.UseVisualStyleBackColor = true;
+            this.btnMantoMarcas.Click += new System.EventHandler(this.btnMantoMarcas_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -382,6 +404,7 @@
         private FontAwesome.Sharp.IconButton btnCliente;
         private FontAwesome.Sharp.IconButton btnMantoMedicamentos;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnMantoMarcas;
     }
 }
 

@@ -60,7 +60,6 @@
             this.label1.Size = new System.Drawing.Size(455, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingrese la informacion de las sucursales";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -71,12 +70,11 @@
             this.label2.Size = new System.Drawing.Size(125, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Buscar Sucursal";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtBuscarSucursal
             // 
             this.txtBuscarSucursal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscarSucursal.Location = new System.Drawing.Point(205, 98);
+            this.txtBuscarSucursal.Location = new System.Drawing.Point(247, 98);
             this.txtBuscarSucursal.Name = "txtBuscarSucursal";
             this.txtBuscarSucursal.Size = new System.Drawing.Size(179, 26);
             this.txtBuscarSucursal.TabIndex = 2;
@@ -106,7 +104,6 @@
             this.materialLabel1.Size = new System.Drawing.Size(114, 27);
             this.materialLabel1.TabIndex = 4;
             this.materialLabel1.Text = "IdSucursal";
-            this.materialLabel1.Click += new System.EventHandler(this.materialLabel1_Click);
             // 
             // materialLabel2
             // 
@@ -121,7 +118,6 @@
             this.materialLabel2.Size = new System.Drawing.Size(91, 27);
             this.materialLabel2.TabIndex = 5;
             this.materialLabel2.Text = "Nombre";
-            this.materialLabel2.Click += new System.EventHandler(this.materialLabel2_Click);
             // 
             // materialLabel3
             // 
@@ -136,7 +132,6 @@
             this.materialLabel3.Size = new System.Drawing.Size(104, 27);
             this.materialLabel3.TabIndex = 6;
             this.materialLabel3.Text = "Direccion";
-            this.materialLabel3.Click += new System.EventHandler(this.materialLabel3_Click);
             // 
             // materialLabel4
             // 
@@ -151,7 +146,6 @@
             this.materialLabel4.Size = new System.Drawing.Size(89, 27);
             this.materialLabel4.TabIndex = 7;
             this.materialLabel4.Text = "Gerente";
-            this.materialLabel4.Click += new System.EventHandler(this.materialLabel4_Click);
             // 
             // materialLabel5
             // 
@@ -166,7 +160,6 @@
             this.materialLabel5.Size = new System.Drawing.Size(98, 27);
             this.materialLabel5.TabIndex = 8;
             this.materialLabel5.Text = "Cantidad";
-            this.materialLabel5.Click += new System.EventHandler(this.materialLabel5_Click);
             // 
             // txtIDSucursal
             // 
@@ -175,7 +168,6 @@
             this.txtIDSucursal.Name = "txtIDSucursal";
             this.txtIDSucursal.Size = new System.Drawing.Size(69, 26);
             this.txtIDSucursal.TabIndex = 9;
-            this.txtIDSucursal.TextChanged += new System.EventHandler(this.txtIDSucursal_TextChanged);
             // 
             // txtNombreS
             // 
@@ -184,7 +176,6 @@
             this.txtNombreS.Name = "txtNombreS";
             this.txtNombreS.Size = new System.Drawing.Size(115, 26);
             this.txtNombreS.TabIndex = 10;
-            this.txtNombreS.TextChanged += new System.EventHandler(this.txtNombreS_TextChanged);
             // 
             // txtDireccionS
             // 
@@ -193,7 +184,6 @@
             this.txtDireccionS.Name = "txtDireccionS";
             this.txtDireccionS.Size = new System.Drawing.Size(229, 26);
             this.txtDireccionS.TabIndex = 11;
-            this.txtDireccionS.TextChanged += new System.EventHandler(this.txtDireccionS_TextChanged);
             // 
             // txtGerenteS
             // 
@@ -202,7 +192,6 @@
             this.txtGerenteS.Name = "txtGerenteS";
             this.txtGerenteS.Size = new System.Drawing.Size(115, 26);
             this.txtGerenteS.TabIndex = 12;
-            this.txtGerenteS.TextChanged += new System.EventHandler(this.txtGerenteS_TextChanged);
             // 
             // txtCantidad
             // 
@@ -211,7 +200,6 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(115, 26);
             this.txtCantidad.TabIndex = 13;
-            this.txtCantidad.TextChanged += new System.EventHandler(this.txtCantidad_TextChanged);
             // 
             // btnInsertarS
             // 
@@ -263,7 +251,6 @@
             this.btnReporteS.TabIndex = 18;
             this.btnReporteS.Text = "Reporte";
             this.btnReporteS.UseVisualStyleBackColor = false;
-            this.btnReporteS.Click += new System.EventHandler(this.btnReporteS_Click);
             // 
             // MantoSucursales
             // 
