@@ -14,12 +14,13 @@ namespace Modelo
     {
 
 
-        claseConexion con = new claseConexion();
+        SqlConnection conexion = new SqlConnection("SERVER=ADMINHO-N9KI8HV;DATABASE=InvFarmacia;Integrated security=true");
+
 
         public DataTable M_empleado(C_Empleado obje)
         {
 
-            SqlCommand cmd = new SqlCommand("sp_Login", con.conectar);
+            SqlCommand cmd = new SqlCommand("sp_Login", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@usuario", obje.Usuario);
             cmd.Parameters.AddWithValue("@contrasena", obje.Contrasena);

@@ -71,6 +71,12 @@
     <Compile Include="Facturar.designer.cs">
       <DependentUpon>Facturar.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantoSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantoSucursales.Designer.cs">
+      <DependentUpon>MantoSucursales.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Facturar.resx">
       <DependentUpon>Facturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantoSucursales.resx">
+      <DependentUpon>MantoSucursales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

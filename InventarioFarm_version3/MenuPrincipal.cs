@@ -27,6 +27,7 @@ namespace InventarioFarm_version3
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
+            customizeDesign();
 
             //Form
             this.Text = string.Empty;
@@ -101,46 +102,45 @@ namespace InventarioFarm_version3
             childForm.Show();
             labeltituloform.Text = childForm.Text;
         }
+
+        // boton desplegable
+
+        private void customizeDesign()
+        {
+            panelMantos.Visible = false;
+
+        }
+
+        private void hidesubMenu()
+        {
+            if (panelMantos.Visible == true)
+               panelMantos.Visible = false;
+
+        }
+
+       
+
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
             if(Login.idRol == "1")
             {
-                btnMantenimientos.Enabled = true;
+                btnMantos.Enabled = true;
                 btnCliente.Enabled = true;
                 btnEmpleado.Enabled = true;
                 btnFacturar.Enabled = true;
             }
             if(Login.idRol == "2")
             {
-                btnMantenimientos.Enabled = false;
-                btnCliente.Enabled = true;
-                btnEmpleado.Enabled = false;
-                btnFacturar.Enabled = true;
+                panelMantos.Visible = false;
+                btnMantos.Visible = false;
+                btnFacturar.Visible = true;
+                btnCreadores.Visible = true;
+                btnSalir.Visible = true;
 
             }
 
         }
 
-       
-        private void btnMantenimientos_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new MantoMedicamentocs());
-
-            ActivateButton(sender, Color.Magenta);
-        }
-
-        private void btnCliente_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new MantoClientes());
-            ActivateButton(sender, Color.Magenta);
-        }
-
-        private void btnEmpleado_Click(object sender, EventArgs e)
-        {
-            
-            ActivateButton(sender, Color.Magenta);
-            OpenChildForm(new MantoEmpleado());
-        }
 
         public void Reset()
         {
@@ -200,6 +200,61 @@ namespace InventarioFarm_version3
         {
             Desarrolladores ne = new Desarrolladores();
             ne.Show();
+        }
+
+        
+
+        private void btnMantos_Click_1(object sender, EventArgs e)
+        {
+
+            if (panelMantos.Visible == true)
+            {
+                 hidesubMenu();
+                panelMantos.Visible = false;
+
+
+            }
+            else
+            {
+                panelMantos.Visible = true;
+            }
+
+        }
+
+       
+
+        private void btnCliente_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new MantoClientes());
+            ActivateButton(sender, Color.Magenta);
+
+            hidesubMenu();
+        }
+
+        private void btnEmpleado_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.Magenta);
+            OpenChildForm(new MantoEmpleado());
+
+            hidesubMenu();
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.Magenta);
+            OpenChildForm(new MantoSucursales());
+
+            hidesubMenu();
+        }
+
+        private void btnMantoMedicamentos_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new MantoMedicamentocs());
+
+            ActivateButton(sender, Color.Magenta);
+
+            hidesubMenu();
         }
     }
 }

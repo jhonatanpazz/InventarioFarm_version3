@@ -42,10 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Conexion.cs" />
     <Compile Include="C_Empleado.cs" />
     <Compile Include="C_Factura.cs" />
     <Compile Include="C_MantoEmpleado.cs" />
+    <Compile Include="C_Sucursal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
