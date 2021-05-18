@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelMantos = new System.Windows.Forms.Panel();
+            this.btnMantoMarcas = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.btnEmpleado = new FontAwesome.Sharp.IconButton();
             this.btnCliente = new FontAwesome.Sharp.IconButton();
@@ -47,7 +48,7 @@
             this.panelsombra = new System.Windows.Forms.Panel();
             this.panelCentral = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnMantoMarcas = new FontAwesome.Sharp.IconButton();
+            this.btnMantoProveedor = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelMantos.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -76,6 +77,7 @@
             // 
             // panelMantos
             // 
+            this.panelMantos.Controls.Add(this.btnMantoProveedor);
             this.panelMantos.Controls.Add(this.btnMantoMarcas);
             this.panelMantos.Controls.Add(this.iconButton2);
             this.panelMantos.Controls.Add(this.btnEmpleado);
@@ -85,6 +87,26 @@
             this.panelMantos.Name = "panelMantos";
             this.panelMantos.Size = new System.Drawing.Size(263, 481);
             this.panelMantos.TabIndex = 10;
+            // 
+            // btnMantoMarcas
+            // 
+            this.btnMantoMarcas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMantoMarcas.FlatAppearance.BorderSize = 0;
+            this.btnMantoMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantoMarcas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMantoMarcas.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.btnMantoMarcas.IconColor = System.Drawing.Color.White;
+            this.btnMantoMarcas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMantoMarcas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMantoMarcas.Location = new System.Drawing.Point(0, 349);
+            this.btnMantoMarcas.Name = "btnMantoMarcas";
+            this.btnMantoMarcas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMantoMarcas.Size = new System.Drawing.Size(263, 52);
+            this.btnMantoMarcas.TabIndex = 10;
+            this.btnMantoMarcas.Text = "Mantenimiento Marcas";
+            this.btnMantoMarcas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMantoMarcas.UseVisualStyleBackColor = true;
+            this.btnMantoMarcas.Click += new System.EventHandler(this.btnMantoMarcas_Click);
             // 
             // iconButton2
             // 
@@ -335,25 +357,25 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // btnMantoMarcas
+            // btnMantoProveedor
             // 
-            this.btnMantoMarcas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMantoMarcas.FlatAppearance.BorderSize = 0;
-            this.btnMantoMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMantoMarcas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMantoMarcas.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.btnMantoMarcas.IconColor = System.Drawing.Color.White;
-            this.btnMantoMarcas.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMantoMarcas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMantoMarcas.Location = new System.Drawing.Point(0, 349);
-            this.btnMantoMarcas.Name = "btnMantoMarcas";
-            this.btnMantoMarcas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMantoMarcas.Size = new System.Drawing.Size(263, 82);
-            this.btnMantoMarcas.TabIndex = 10;
-            this.btnMantoMarcas.Text = "Mantenimiento Marcas";
-            this.btnMantoMarcas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMantoMarcas.UseVisualStyleBackColor = true;
-            this.btnMantoMarcas.Click += new System.EventHandler(this.btnMantoMarcas_Click);
+            this.btnMantoProveedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMantoProveedor.FlatAppearance.BorderSize = 0;
+            this.btnMantoProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantoProveedor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMantoProveedor.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.btnMantoProveedor.IconColor = System.Drawing.Color.White;
+            this.btnMantoProveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMantoProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMantoProveedor.Location = new System.Drawing.Point(0, 401);
+            this.btnMantoProveedor.Name = "btnMantoProveedor";
+            this.btnMantoProveedor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMantoProveedor.Size = new System.Drawing.Size(263, 52);
+            this.btnMantoProveedor.TabIndex = 11;
+            this.btnMantoProveedor.Text = "Mantenimiento Proveedor";
+            this.btnMantoProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMantoProveedor.UseVisualStyleBackColor = true;
+            this.btnMantoProveedor.Click += new System.EventHandler(this.btnMantoProveedor_Click);
             // 
             // MenuPrincipal
             // 
@@ -405,6 +427,7 @@
         private FontAwesome.Sharp.IconButton btnMantoMedicamentos;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton btnMantoMarcas;
+        private FontAwesome.Sharp.IconButton btnMantoProveedor;
     }
 }
 

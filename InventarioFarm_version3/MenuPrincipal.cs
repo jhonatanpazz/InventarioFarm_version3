@@ -267,5 +267,15 @@ namespace InventarioFarm_version3
             hidesubMenu();
 
         }
+
+        private void btnMantoProveedor_Click(object sender, EventArgs e)
+        {
+
+            OpenChildForm(new MantoProveedores());
+
+            ActivateButton(sender, Color.Magenta);
+
+            hidesubMenu();
+        }
     }
 }
