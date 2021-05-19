@@ -90,13 +90,15 @@ namespace Modelo
         public DataTable CargarcomboboxTablaProducto()
         {
             con.abrir();
-            SqlCommand cmd = new SqlCommand(string.Format("select idproducto, Nombre, Precio from Producto"), con.conectar);
+            SqlCommand cmd = new SqlCommand(string.Format("select idproducto,Nombre,Precio from Producto"), con.conectar);
             SqlDataAdapter ad = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             ad.Fill(dt);
             con.cerrar();
             return dt;
         }
+
+        
 
         public DataTable CargarcomboboxTablaSucursal()
             {

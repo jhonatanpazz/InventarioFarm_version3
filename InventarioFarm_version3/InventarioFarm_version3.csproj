@@ -89,6 +89,12 @@
     <Compile Include="MantoSucursales.Designer.cs">
       <DependentUpon>MantoSucursales.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manto_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manto_Inventario.Designer.cs">
+      <DependentUpon>Manto_Inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantoSucursales.resx">
       <DependentUpon>MantoSucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manto_Inventario.resx">
+      <DependentUpon>Manto_Inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

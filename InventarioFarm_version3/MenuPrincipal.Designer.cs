@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelMantos = new System.Windows.Forms.Panel();
+            this.btnMantoProveedor = new FontAwesome.Sharp.IconButton();
             this.btnMantoMarcas = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.btnEmpleado = new FontAwesome.Sharp.IconButton();
@@ -48,7 +49,7 @@
             this.panelsombra = new System.Windows.Forms.Panel();
             this.panelCentral = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnMantoProveedor = new FontAwesome.Sharp.IconButton();
+            this.btnMantoInventario = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelMantos.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -72,11 +73,12 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(266, 962);
+            this.panelMenu.Size = new System.Drawing.Size(266, 1031);
             this.panelMenu.TabIndex = 0;
             // 
             // panelMantos
             // 
+            this.panelMantos.Controls.Add(this.btnMantoInventario);
             this.panelMantos.Controls.Add(this.btnMantoProveedor);
             this.panelMantos.Controls.Add(this.btnMantoMarcas);
             this.panelMantos.Controls.Add(this.iconButton2);
@@ -85,20 +87,42 @@
             this.panelMantos.Controls.Add(this.btnMantoMedicamentos);
             this.panelMantos.Location = new System.Drawing.Point(3, 469);
             this.panelMantos.Name = "panelMantos";
-            this.panelMantos.Size = new System.Drawing.Size(263, 481);
+            this.panelMantos.Size = new System.Drawing.Size(263, 538);
             this.panelMantos.TabIndex = 10;
+            // 
+            // btnMantoProveedor
+            // 
+            this.btnMantoProveedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMantoProveedor.FlatAppearance.BorderSize = 0;
+            this.btnMantoProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantoProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMantoProveedor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMantoProveedor.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.btnMantoProveedor.IconColor = System.Drawing.Color.White;
+            this.btnMantoProveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMantoProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMantoProveedor.Location = new System.Drawing.Point(0, 368);
+            this.btnMantoProveedor.Name = "btnMantoProveedor";
+            this.btnMantoProveedor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMantoProveedor.Size = new System.Drawing.Size(263, 52);
+            this.btnMantoProveedor.TabIndex = 11;
+            this.btnMantoProveedor.Text = "Mantenimiento Proveedor";
+            this.btnMantoProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMantoProveedor.UseVisualStyleBackColor = true;
+            this.btnMantoProveedor.Click += new System.EventHandler(this.btnMantoProveedor_Click);
             // 
             // btnMantoMarcas
             // 
             this.btnMantoMarcas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMantoMarcas.FlatAppearance.BorderSize = 0;
             this.btnMantoMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantoMarcas.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMantoMarcas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnMantoMarcas.IconChar = FontAwesome.Sharp.IconChar.Book;
             this.btnMantoMarcas.IconColor = System.Drawing.Color.White;
             this.btnMantoMarcas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMantoMarcas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMantoMarcas.Location = new System.Drawing.Point(0, 349);
+            this.btnMantoMarcas.Location = new System.Drawing.Point(0, 316);
             this.btnMantoMarcas.Name = "btnMantoMarcas";
             this.btnMantoMarcas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMantoMarcas.Size = new System.Drawing.Size(263, 52);
@@ -113,12 +137,13 @@
             this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 267);
+            this.iconButton2.Location = new System.Drawing.Point(0, 234);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.iconButton2.Size = new System.Drawing.Size(263, 82);
@@ -133,12 +158,13 @@
             this.btnEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEmpleado.FlatAppearance.BorderSize = 0;
             this.btnEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEmpleado.IconChar = FontAwesome.Sharp.IconChar.Walking;
             this.btnEmpleado.IconColor = System.Drawing.Color.White;
             this.btnEmpleado.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleado.Location = new System.Drawing.Point(0, 193);
+            this.btnEmpleado.Location = new System.Drawing.Point(0, 160);
             this.btnEmpleado.Name = "btnEmpleado";
             this.btnEmpleado.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEmpleado.Size = new System.Drawing.Size(263, 74);
@@ -153,12 +179,13 @@
             this.btnCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCliente.FlatAppearance.BorderSize = 0;
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCliente.IconChar = FontAwesome.Sharp.IconChar.PeopleArrows;
             this.btnCliente.IconColor = System.Drawing.Color.White;
             this.btnCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCliente.Location = new System.Drawing.Point(0, 111);
+            this.btnCliente.Location = new System.Drawing.Point(0, 78);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCliente.Size = new System.Drawing.Size(263, 82);
@@ -173,6 +200,7 @@
             this.btnMantoMedicamentos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMantoMedicamentos.FlatAppearance.BorderSize = 0;
             this.btnMantoMedicamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantoMedicamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMantoMedicamentos.ForeColor = System.Drawing.SystemColors.Control;
             this.btnMantoMedicamentos.IconChar = FontAwesome.Sharp.IconChar.Monero;
             this.btnMantoMedicamentos.IconColor = System.Drawing.Color.White;
@@ -181,7 +209,7 @@
             this.btnMantoMedicamentos.Location = new System.Drawing.Point(0, 0);
             this.btnMantoMedicamentos.Name = "btnMantoMedicamentos";
             this.btnMantoMedicamentos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMantoMedicamentos.Size = new System.Drawing.Size(263, 111);
+            this.btnMantoMedicamentos.Size = new System.Drawing.Size(263, 78);
             this.btnMantoMedicamentos.TabIndex = 6;
             this.btnMantoMedicamentos.Text = "Mantenimientos de Medicamentos";
             this.btnMantoMedicamentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -193,6 +221,7 @@
             this.btnMantos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMantos.FlatAppearance.BorderSize = 0;
             this.btnMantos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMantos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnMantos.IconChar = FontAwesome.Sharp.IconChar.Edit;
             this.btnMantos.IconColor = System.Drawing.Color.White;
@@ -213,6 +242,7 @@
             this.btnCreadores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCreadores.FlatAppearance.BorderSize = 0;
             this.btnCreadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreadores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCreadores.IconChar = FontAwesome.Sharp.IconChar.Deezer;
             this.btnCreadores.IconColor = System.Drawing.Color.White;
@@ -233,6 +263,7 @@
             this.btnSalir.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.ExclamationTriangle;
             this.btnSalir.IconColor = System.Drawing.Color.White;
@@ -253,6 +284,7 @@
             this.btnFacturar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFacturar.FlatAppearance.BorderSize = 0;
             this.btnFacturar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnFacturar.IconChar = FontAwesome.Sharp.IconChar.Deezer;
             this.btnFacturar.IconColor = System.Drawing.Color.White;
@@ -342,7 +374,7 @@
             this.panelCentral.Location = new System.Drawing.Point(266, 72);
             this.panelCentral.MinimumSize = new System.Drawing.Size(981, 900);
             this.panelCentral.Name = "panelCentral";
-            this.panelCentral.Size = new System.Drawing.Size(1232, 900);
+            this.panelCentral.Size = new System.Drawing.Size(1232, 959);
             this.panelCentral.TabIndex = 3;
             this.panelCentral.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCentral_Paint);
             // 
@@ -350,39 +382,40 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(544, 321);
+            this.pictureBox2.Location = new System.Drawing.Point(544, 350);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(167, 180);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // btnMantoProveedor
+            // btnMantoInventario
             // 
-            this.btnMantoProveedor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMantoProveedor.FlatAppearance.BorderSize = 0;
-            this.btnMantoProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMantoProveedor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMantoProveedor.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
-            this.btnMantoProveedor.IconColor = System.Drawing.Color.White;
-            this.btnMantoProveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMantoProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMantoProveedor.Location = new System.Drawing.Point(0, 401);
-            this.btnMantoProveedor.Name = "btnMantoProveedor";
-            this.btnMantoProveedor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMantoProveedor.Size = new System.Drawing.Size(263, 52);
-            this.btnMantoProveedor.TabIndex = 11;
-            this.btnMantoProveedor.Text = "Mantenimiento Proveedor";
-            this.btnMantoProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMantoProveedor.UseVisualStyleBackColor = true;
-            this.btnMantoProveedor.Click += new System.EventHandler(this.btnMantoProveedor_Click);
+            this.btnMantoInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMantoInventario.FlatAppearance.BorderSize = 0;
+            this.btnMantoInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantoInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMantoInventario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMantoInventario.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            this.btnMantoInventario.IconColor = System.Drawing.Color.White;
+            this.btnMantoInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMantoInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMantoInventario.Location = new System.Drawing.Point(0, 420);
+            this.btnMantoInventario.Name = "btnMantoInventario";
+            this.btnMantoInventario.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMantoInventario.Size = new System.Drawing.Size(263, 52);
+            this.btnMantoInventario.TabIndex = 12;
+            this.btnMantoInventario.Text = "Mantenimiento Inventario";
+            this.btnMantoInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMantoInventario.UseVisualStyleBackColor = true;
+            this.btnMantoInventario.Click += new System.EventHandler(this.btnMantoInventario_Click);
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1498, 962);
+            this.ClientSize = new System.Drawing.Size(1498, 1031);
             this.Controls.Add(this.panelCentral);
             this.Controls.Add(this.panelsombra);
             this.Controls.Add(this.panelBarratitle);
@@ -428,6 +461,7 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton btnMantoMarcas;
         private FontAwesome.Sharp.IconButton btnMantoProveedor;
+        private FontAwesome.Sharp.IconButton btnMantoInventario;
     }
 }
 

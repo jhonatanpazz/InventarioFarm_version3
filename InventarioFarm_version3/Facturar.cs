@@ -19,7 +19,7 @@ namespace InventarioFarm_version3
             InitializeComponent();
         }
 
-        double total = 0;
+        double total = 0.0;
 
         M_Factura sql = new Modelo.M_Factura();
         C_Factura obj = new C_Factura();
@@ -30,11 +30,12 @@ namespace InventarioFarm_version3
             cmbCliente.DisplayMember = "Nombre";
             cmbCliente.ValueMember = "idcliente";
 
+            
+
             cmbProducto.DataSource = sql.CargarcomboboxTablaProducto();
             cmbProducto.DisplayMember = "Nombre";
             cmbProducto.ValueMember = "idproducto";
-            
-            
+
 
             cmbEmpleado.DataSource = sql.CargarcomboboxTablaEmpleado();
             cmbEmpleado.DisplayMember = "Nombre";
@@ -63,28 +64,30 @@ namespace InventarioFarm_version3
 
         private void btnFacturar_Click(object sender, EventArgs e)
         {
+        
 
+                //String pre = txtTotalp.Text;
 
-            String pre = txtTotalp.Text;
+                obj.idcliente = cmbCliente.SelectedValue.ToString();
+                obj.idempleado = cmbEmpleado.SelectedValue.ToString();
+                obj.idsucursal = cmbSucursal.SelectedValue.ToString();
+                obj.FechaFacturacion = txtFechaF.Text;
+                obj.Total = txtTotalp.Text;
 
-            obj.idcliente = cmbCliente.SelectedValue.ToString();
-            obj.idempleado = cmbEmpleado.SelectedValue.ToString();
-            obj.idsucursal = cmbSucursal.SelectedValue.ToString();
-            obj.FechaFacturacion = txtFechaF.Text;
-            obj.Total = pre;
+                txtTotalp.Clear();
+                int resultado = sql.AgregarFactura(obj);
 
-            int resultado = sql.AgregarFactura(obj);
-
-            if (resultado > 0)
-            {
-                MessageBox.Show("Datos Guardados", "Datos Guardados ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (resultado > 0)
+                {
+                    MessageBox.Show("Datos Guardados", "Datos Guardados ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
                
-            }
-            else
-            {
-                MessageBox.Show("Datos No Guardados", "Datos no Guardados ", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-
+                }
+                else
+                {
+                    MessageBox.Show("Datos No Guardados", "Datos no Guardados ", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+           
         }
 
         private void btnTotal_Click(object sender, EventArgs e)
@@ -94,9 +97,10 @@ namespace InventarioFarm_version3
             for (int i = 0; i < DGVFactura.Rows.Count; i++)
             {
 
-                total = total + Convert.ToDouble(DGVFactura.Rows[i].Cells[4].Value);
+                total = (total + Convert.ToDouble(DGVFactura.Rows[i].Cells[4].Value));
             }
 
+            
             txtTotalp.Text = "" + total;
         }
 
