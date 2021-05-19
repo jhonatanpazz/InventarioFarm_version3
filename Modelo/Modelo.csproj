@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="claseConexion.cs" />
+    <Compile Include="M_Dfactura.cs" />
     <Compile Include="M_Empleado.cs" />
     <Compile Include="M_Factura.cs" />
+    <Compile Include="M_Ingresos.cs" />
     <Compile Include="M_Inventario.cs" />
     <Compile Include="M_MantoEmpleado.cs" />
     <Compile Include="M_Marca.cs" />

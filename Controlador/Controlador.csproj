@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="C_DetalleFactura.cs" />
     <Compile Include="C_Empleado.cs" />
     <Compile Include="C_Factura.cs" />
+    <Compile Include="C_Ingresos.cs" />
     <Compile Include="C_Inventario.cs" />
     <Compile Include="C_MantoEmpleado.cs" />
     <Compile Include="C_Marca.cs" />

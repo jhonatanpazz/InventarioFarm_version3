@@ -182,7 +182,7 @@ namespace InventarioFarm_version3
         {
 
             ActivateButton(sender, Color.Magenta);
-            OpenChildForm(new Facturar());
+            OpenChildForm(new MantoDetalleFactura());
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -281,7 +281,7 @@ namespace InventarioFarm_version3
         private void btnMantoInventario_Click(object sender, EventArgs e)
         {
 
-            OpenChildForm(new Manto_Inventario());
+            OpenChildForm(new MantoIngresos());
 
             ActivateButton(sender, Color.Magenta);
 

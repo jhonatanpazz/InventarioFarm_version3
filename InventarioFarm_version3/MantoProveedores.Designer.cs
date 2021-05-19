@@ -71,6 +71,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(32, 84);
             this.label2.Name = "label2";
@@ -80,7 +81,8 @@
             // 
             // txtBuscarProve
             // 
-            this.txtBuscarProve.Location = new System.Drawing.Point(258, 78);
+            this.txtBuscarProve.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBuscarProve.Location = new System.Drawing.Point(246, 81);
             this.txtBuscarProve.Name = "txtBuscarProve";
             this.txtBuscarProve.Size = new System.Drawing.Size(164, 26);
             this.txtBuscarProve.TabIndex = 2;
@@ -88,11 +90,12 @@
             // 
             // DGVproveedor
             // 
+            this.DGVproveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DGVproveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVproveedor.Location = new System.Drawing.Point(36, 145);
             this.DGVproveedor.Name = "DGVproveedor";
             this.DGVproveedor.RowTemplate.Height = 28;
-            this.DGVproveedor.Size = new System.Drawing.Size(1024, 198);
+            this.DGVproveedor.Size = new System.Drawing.Size(1148, 198);
             this.DGVproveedor.TabIndex = 3;
             this.DGVproveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVproveedor_CellContentClick);
             // 
@@ -138,6 +141,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(36, 434);
             this.label7.Name = "label7";
@@ -187,6 +191,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(36, 487);
             this.label12.Name = "label12";
@@ -197,7 +202,7 @@
             // txtIdProveedor
             // 
             this.txtIdProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtIdProveedor.Location = new System.Drawing.Point(161, 380);
+            this.txtIdProveedor.Location = new System.Drawing.Point(177, 380);
             this.txtIdProveedor.Name = "txtIdProveedor";
             this.txtIdProveedor.Size = new System.Drawing.Size(58, 26);
             this.txtIdProveedor.TabIndex = 14;
@@ -205,7 +210,7 @@
             // txtEmpresa
             // 
             this.txtEmpresa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmpresa.Location = new System.Drawing.Point(394, 377);
+            this.txtEmpresa.Location = new System.Drawing.Point(394, 380);
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(124, 26);
             this.txtEmpresa.TabIndex = 15;
@@ -228,6 +233,7 @@
             // 
             // txtCiudadP
             // 
+            this.txtCiudadP.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtCiudadP.Location = new System.Drawing.Point(114, 431);
             this.txtCiudadP.Name = "txtCiudadP";
             this.txtCiudadP.Size = new System.Drawing.Size(105, 26);
@@ -236,7 +242,7 @@
             // txtRegion
             // 
             this.txtRegion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtRegion.Location = new System.Drawing.Point(340, 428);
+            this.txtRegion.Location = new System.Drawing.Point(351, 431);
             this.txtRegion.Name = "txtRegion";
             this.txtRegion.Size = new System.Drawing.Size(105, 26);
             this.txtRegion.TabIndex = 19;
@@ -244,7 +250,7 @@
             // txtCodPostal
             // 
             this.txtCodPostal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCodPostal.Location = new System.Drawing.Point(596, 428);
+            this.txtCodPostal.Location = new System.Drawing.Point(596, 431);
             this.txtCodPostal.Name = "txtCodPostal";
             this.txtCodPostal.Size = new System.Drawing.Size(84, 26);
             this.txtCodPostal.TabIndex = 20;
@@ -252,7 +258,7 @@
             // txtPais
             // 
             this.txtPais.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPais.Location = new System.Drawing.Point(790, 428);
+            this.txtPais.Location = new System.Drawing.Point(788, 431);
             this.txtPais.Name = "txtPais";
             this.txtPais.Size = new System.Drawing.Size(105, 26);
             this.txtPais.TabIndex = 21;
@@ -260,14 +266,15 @@
             // txtTelefono
             // 
             this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTelefono.Location = new System.Drawing.Point(1052, 434);
+            this.txtTelefono.Location = new System.Drawing.Point(1052, 431);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(105, 26);
             this.txtTelefono.TabIndex = 22;
             // 
             // txtEmailP
             // 
-            this.txtEmailP.Location = new System.Drawing.Point(114, 487);
+            this.txtEmailP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmailP.Location = new System.Drawing.Point(123, 484);
             this.txtEmailP.Name = "txtEmailP";
             this.txtEmailP.Size = new System.Drawing.Size(112, 26);
             this.txtEmailP.TabIndex = 23;
